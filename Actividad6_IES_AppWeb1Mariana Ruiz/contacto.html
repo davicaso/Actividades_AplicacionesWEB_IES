@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Consultora Financiera</title>
+    <!-- Vinculación del CSS-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- Header-->
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="./index.html">Volver a la página principal</a>
+        </nav>
+    </header>
+
+    <!-- Main-->
+    <main class="main-content">
+        <section class="contact-section">
+            <h1>Formulario de Contacto</h1>
+            <h2>¿Te gustaría poner orden en las finanzas de tu negocio o coordinar una sesión de asesoría?</h2> 
+            <p>Completa el siguiente formulario y me pondré en contacto contigo a la brevedad.</p>
+
+            <!-- Formulario -->
+            <form action="./contacto.html" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="id-Nombre">Nombre</label>
+                    <input type="text" name="nombre" id="id-Nombre" required> 
+                </div>
+
+                <div class="form-group">
+                    <label for="id-Apellido">Apellido</label>
+                    <input type="text" name="Apellido" id="id-Apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-correo">Correo electrónico</label>
+                    <input type="email" name="Correo Electronico" id="id-correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-teléfono">Teléfono</label>
+                    <input type="tel" name="teléfono" id="id-teléfono">
+                </div>
+
+                <div class="form-group">
+                    <label for="id-servicio">Servicio de interés</label>
+                    <select name="servicio" id="id-servicio">
+                        <option value="diagnóstico">Diagnóstico financiero</option>
+                        <option value="planificacion">Planificación de presupuesto</option>
+                        <option value="estrategia">Estrategia de precios</option>
+                        <option value="consulta">Consulta general</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-consulta">Consulta</label>
+                    <textarea name="consulta" id="id-consulta" rows="4" cols="50" placeholder="Cuéntame brevemente sobre tu negocio o situación actual"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+            <!-- Fin del formulario -->
+        </section>
+    </main>
+
+    <!--Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Mariana Ruiz. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

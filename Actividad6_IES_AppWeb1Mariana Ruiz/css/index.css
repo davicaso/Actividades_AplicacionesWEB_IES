@@ -1,0 +1,66 @@
+/* RESETEO BASICO Y MODELO DE CAJA ALTERNATIVO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SELECTORES DE TIPO (GLOBALES) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8d4f1d86;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+h1, h2, h3 {
+    color:#1a1a1a
+    margin-bottom 10px;
+
+}
+p {
+    margin-bottom: 15px;
+}
+
+/* SELECTORES DE CLASE (LAYOUT PRINCIPAL) */
+.site-header {
+    background-color: #f0f0f0;
+    color:#ffffff
+    padding 20px;
+    text-align: center;
+}
+main-content {
+    max-width:1000px;
+    margin: 0 auto;
+    padding: 30 px 20px;
+}
+.site-footer {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* SELECTORES COMBINADOS */
+.site-header a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 15px
+    font-weight bold;
+}
+
+/* SELECTOR COMBINADO DESCENDIENTE PARA CAMBIAR DE COLOR AL PASAR EL MOUSE */
+.site-header a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* SELECTOR COMBINADO PARA UN COMPONENTE ESPECIFICO DENTRO DEL MAIN */
+.main-content .card
+{
+    background-color: #ffffff;
+    padding: 20px;    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
