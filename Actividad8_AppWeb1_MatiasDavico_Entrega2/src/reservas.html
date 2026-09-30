@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <!-- Mismo CSS que index.html -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- Mismo header que en index.html -->
+    <header class="encabezado">
+        <a href="./index.html" class="encabezado-logo">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio" width="170">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <h1>Reservas</h1>
+        <!-- Cambie el h4 por h2 para no saltear niveles de titulos -->
+        <h2>Contactanos</h2>
+        <p>Completá el formulario y te respondemos a la brevedad.</p>
+
+        <!-- method post para que los datos no se vean en la URL -->
+        <form action="./reservas.html" method="post" class="formulario">
+            <!-- Cada label tiene el for igual al id del campo -->
+            <div class="formulario-campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <div class="formulario-campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" required>
+            </div>
+
+            <div class="formulario-campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="formulario-campo">
+                <label for="fecha-desde">Fecha desde</label>
+                <!-- type date muestra un calendario -->
+                <input type="date" name="fecha_desde" id="fecha-desde" required>
+            </div>
+
+            <div class="formulario-campo">
+                <label for="fecha-hasta">Fecha hasta</label>
+                <input type="date" name="fecha_hasta" id="fecha-hasta" required>
+            </div>
+
+            <div class="formulario-campo">
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="formulario-boton">Enviar consulta</button>
+        </form>
+    </main>
+
+    <!-- Mismo footer que en index.html -->
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

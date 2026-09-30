@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <!-- Mismo CSS para las dos paginas, asi tienen el mismo layout -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<!--
+    index.html es MPA: es una pagina informativa, el servidor la manda completa (SSR)
+    y es mejor para que aparezca en los buscadores.
+    reservas.html es SPA: tiene el formulario y se puede actualizar sin recargar
+    la pagina, con JavaScript en el navegador (CSR).
+-->
+<body>
+    <!-- Cambie el div por header porque es el encabezado del sitio -->
+    <header class="encabezado">
+        <!-- El logo lleva al inicio. El alt es importante para accesibilidad y por si no carga la imagen -->
+        <a href="./index.html" class="encabezado-logo">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio" width="170">
+        </a>
+        <!-- nav para el menu principal -->
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main es el contenido principal de la pagina -->
+    <main class="principal">
+        <!-- Deje un solo h1 porque habia dos -->
+        <h1>Cabañas para alquiler</h1>
+        <p>Bienvenido a nuestro catálogo de cabañas en San Javier, Traslasierras, Córdoba. Explorá nuestras opciones y encontrá la que mejor se adapte a tus necesidades.</p>
+
+        <!-- section para agrupar las cabañas -->
+        <section class="catalogo">
+            <h2>Nuestras cabañas</h2>
+
+            <!-- Cada cabaña es un article porque es un contenido independiente -->
+            <article class="cabana">
+                <h3>Cabaña 1</h3>
+                <!-- picture usa la imagen webp que pesa menos, y si no la jpg -->
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo1.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo1.jpg" alt="Frente de la Cabaña 1 al pie de la montaña" width="400">
+                </picture>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="cabana-precio">Precio por día: $80.000</p>
+                <a href="./reservas.html" class="cabana-enlace">Reservar Cabaña 1</a>
+            </article>
+
+            <article class="cabana">
+                <h3>Cabaña 2</h3>
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo2.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo2.jpg" alt="Vista exterior de la Cabaña 2" width="400">
+                </picture>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="cabana-precio">Precio por día: $95.000</p>
+                <a href="./reservas.html" class="cabana-enlace">Reservar Cabaña 2</a>
+            </article>
+
+            <article class="cabana">
+                <h3>Cabaña 3</h3>
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo3.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo3.jpg" alt="Vista exterior de la Cabaña 3" width="400">
+                </picture>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="cabana-precio">Precio por día: $110.000</p>
+                <a href="./reservas.html" class="cabana-enlace">Reservar Cabaña 3</a>
+            </article>
+
+            <article class="cabana">
+                <h3>Cabaña 4</h3>
+                <picture>
+                    <source srcset="./recursos/imagenes/modelo4.webp" type="image/webp">
+                    <img src="./recursos/imagenes/modelo4.jpg" alt="Vista exterior de la Cabaña 4" width="400">
+                </picture>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="cabana-precio">Precio por día: $125.000</p>
+                <a href="./reservas.html" class="cabana-enlace">Reservar Cabaña 4</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Cambie el div por footer porque es el pie de pagina -->
+    <footer class="pie">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
